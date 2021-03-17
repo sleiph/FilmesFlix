@@ -42,5 +42,4 @@ class MainActivity : AppCompatActivity() {
     private fun loadingVisibility(isLoading: Boolean) {
         progressBar.visibility = if (isLoading) View.VISIBLE else View.GONE
     }
-
 }

@@ -38,5 +38,4 @@ class MovieListViewModel: ViewModel() {
             }
         }.start()
     }
-
 }
