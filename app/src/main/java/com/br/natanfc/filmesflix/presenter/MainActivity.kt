@@ -1,5 +1,6 @@
 package com.br.natanfc.filmesflix.presenter
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -22,6 +23,14 @@ class MainActivity : AppCompatActivity() {
         initObserver()
         loadingVisibility(true)
     }
+
+    /*
+    private fun loadRespostas(filme: Int) {
+        val intent = Intent(this, DetalhesActivity::class.java)
+        intent.putExtra("filme", filme)
+        startActivity(intent)
+    }
+    */
 
     private fun initObserver() {
         movieListViewModel.moviesList.observe(this, { list ->
